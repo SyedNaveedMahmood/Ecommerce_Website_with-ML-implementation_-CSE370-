@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2024 at 05:52 AM
+-- Generation Time: Apr 16, 2024 at 03:09 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -1057,6 +1057,7 @@ INSERT INTO `review` (`product_id`, `customer_id`, `user_review`) VALUES
 (40013, 00056, 'Great Product '),
 (40013, 00056, 'onk pocha'),
 (40013, 00056, 'onk valo'),
+(40013, 00056, 'valooooo'),
 (40014, 00010, 'Classy timepiece, keeps accurate time!'),
 (40014, 00023, 'Durable construction, elegant design!'),
 (40014, 00039, 'Great value for money, versatile style!'),
@@ -1428,7 +1429,39 @@ INSERT INTO `review` (`product_id`, `customer_id`, `user_review`) VALUES
 (40125, 00045, 'Convenient sugar substitute, perfect for those watching their calorie intake!'),
 (40125, 00045, 'Tastes just like sugar, without the guilt!'),
 (40125, 00045, 'Versatile sweetener, suitable for beverages, baking, and cooking!'),
-(40180, 00056, 'Great Product');
+(40180, 00056, 'Great Product'),
+(40218, 00056, 'vala');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `supplied_by`
+--
+
+CREATE TABLE `supplied_by` (
+  `warehouse_id` int(11) DEFAULT NULL,
+  `supplier_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `supplied_by`
+--
+
+INSERT INTO `supplied_by` (`warehouse_id`, `supplier_id`) VALUES
+(1, 50001),
+(2, 50002),
+(3, 50003),
+(4, 50004),
+(5, 50005),
+(6, 50006),
+(7, 50007),
+(8, 50008),
+(9, 50009),
+(10, 50010),
+(11, 50011),
+(12, 50012),
+(13, 50013),
+(14, 50014);
 
 -- --------------------------------------------------------
 
